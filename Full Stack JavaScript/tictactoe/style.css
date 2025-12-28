@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.79);
+}
+
+@font-face {
+    font-family: 'Protest Riot';
+    font-weight: 400;
+    src: url('assets/ProtestRiot-Regular.woff2') format('woff2');
+}
+
+.container{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:50vh;
+    width: 50vw;
+    font-size:8vh;
+}
+.row{
+    display:flex;
+    gap:0.8vw;
+}
+
+.h,.vert1,.vert2{
+    background: rgb(10,72,227);
+    background: linear-gradient(312deg, rgba(10,72,227,1) 0%, rgba(222,31,31,1) 45%, rgba(181,16,16,1) 100%);
+    border-radius: 10px;
+}
+.h{
+    width:45vw;
+    height: 1.8vh;
+}
+.play{
+    width:13vw;
+    height:12.2vh;
+    background-color: rgba(26, 24, 24, 0.82);
+    font-family: 'Protest Riot';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disabledDiv{
+    pointer-events: none;
+}
+
+.vert1,.vert2{
+    z-index: 1;
+    height:50vh;
+    width:0.8vw;
+    position:absolute;
+}
+.vert1{
+    right:17.6vw;
+}
+.vert2{
+    left:17.6vw;
+}
+
+.tleft{
+    border-top-left-radius: 10px;
+}
+.tright{
+    border-top-right-radius: 10px;
+}
+.bleft{
+    border-bottom-left-radius: 10px;
+}
+.bright{
+    border-bottom-right-radius: 10px;
+}
+.head{
+    position:absolute;
+    top:0;
+    height:10vh;
+    width:100vw;
+    background-color: rgba(26, 24, 24, 0.82);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    background: -webkit-linear-gradient(rgba(10,72,227,1), rgba(181,16,16,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 20vw;
+}
+.px,.po,.score{
+    height:10vh;
+    font-size:7vh;
+    font-family: 'Protest Riot';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.px,.po{
+    width:40vw;
+}
+.px{
+    color:#de1f1f;
+}
+.po{
+    color:rgba(10,72,227,1);
+}
+
+
+/*
+background-color: rgba(26, 24, 24, 0.82);
+background-color: rgba(0, 0, 0, 0.79);
+*/

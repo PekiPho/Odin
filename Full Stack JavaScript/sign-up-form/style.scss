@@ -1,0 +1,154 @@
+@mixin flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin paddings{
+    padding-left: 4vw;
+    padding-right: 16vw;
+}
+body{
+    @include flexy;
+    background-color: #fffafa;
+}
+*{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: 'Norse';
+    src: url('./assets/Norse-Bold.woff2') format('woff2'),
+         url('./assets/Norse-Bold.otf') format('otf');
+}
+img{
+    width:7vw;
+    height:14vh;
+}
+a{
+    all:unset;
+}
+form{
+    width:65vw;
+    height:35vh;
+    background-color: white;
+    box-shadow: 0 2px 10px -3px black;
+}
+label{
+    color:darken(#E5E7EB,75%);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+input{
+    width:15vw;
+    height:30px;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    padding-left: 5px;
+}
+button{
+    background-color: #596D48;
+    color:white;
+    border-radius: 5px;
+    border-style:solid;
+    width:10vw;
+    height:40px;
+    font-size: 20px;
+    margin-top:30px;
+    box-shadow: 0 2px 10px -2px black;
+}
+
+.left{
+    width:35vw;
+    height:100vh;
+    background-image: url("./assets/plant.jpg");
+    background-size: 35vw 100vh;
+    position:relative;
+    color:white;
+}
+.right{
+    width:65vw;
+    height:100vh;
+    @include flexy;
+    flex-direction: column;
+}
+.logo{
+    @include flexy;
+    height:16vh;
+    width:35vw;
+    position: absolute;
+    top: 20vh;
+    background-color: rgba(1,1,1,0.4);
+    
+    font-family: 'Norse';
+    font-size: 10vh;
+}
+
+.footer{
+    width:35vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: large;
+}
+.up,.already{
+    
+    @include paddings;
+    width: 45vw;
+}
+.up{
+    font-size: 28px;
+    font-weight: 500;
+}
+.up:nth-child(3){
+    margin-top: 30px;
+    margin-bottom:40px;
+}
+.container{
+    display: flex;
+
+}
+form>p{
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1vh;
+}
+.container-input{
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+.container-input:nth-child(2){
+    padding-right: 12vw;
+}
+.already{
+    font-size: 18px;
+    padding-top: 20px;
+}
+.links{
+    text-decoration: underline;
+}
+.login{
+    color: #596D48;
+    font-weight: bold;
+}
+
+.error{
+    border-color: #ff3333;
+}
+.correct{
+    border-color: #596D48;
+}
+
+input:focus{
+    border-color: #7676a7;
+    outline:none;
+}
+
+.error2{
+    color:#ff3333;
+    font-size: small;
+}

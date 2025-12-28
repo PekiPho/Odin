@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <!--<script src="./js/todo.js" defer></script>-->
+    <script src="./js/projects.js" type="module"></script>
+    <script  src="main.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/assets/arrow.svg" alt="">
+        ToDo
+        <div class="modal1 active">
+            New To Do
+            <input type="text" class="title_td" placeholder="To do title">
+            <textarea name="" id="desc" cols="30" rows="4" placeholder="Description"></textarea>
+            <div class="container">
+                <input type="date" class="date" placeholder="Date">
+                <select name="priority" id="priority">
+                    <option value="Low" class="color1">Low</option>
+                    <option value="Medium" class="color2">Medium</option>
+                    <option value="High" class="color3">High</option>
+                </select>
+            </div>
+            <div class="exit exit1">&times;</div>
+            <button>Create</button>
+        </div>
+    </div>
+    <div class="left">
+        <p>Projects</p>
+        <div class="new">
+            <img src="/assets/plus.svg" alt="">
+            New Project
+        </div>
+        <div class="modal">
+            New Project
+            <input type="text" class="title_pr" placeholder="Project title">
+            <div class="exit">&times;</div>
+            <button>Create</button>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="body">
+        <div class="projtitle">
+            <div class="left1"></div>
+            <div class="right1"></div>
+        </div>
+        <div class="projbody">
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+.modal,.modal1{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 10;
+    background-color:  hwb(97 31% 5% / 0.98);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding:15px;
+    padding-top: 30px;
+    color:black;
+
+}
+.modal.active,.modal1.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #cccacc;
+    opacity: 0;
+    pointer-events: none;
+    /* backdrop-filter:blur(50px); this thing creates bad lag*/
+    z-index: 2;
+}
+.overlay.active{
+    pointer-events: all;
+    opacity:0.4;
+    
+}
+.modal>input{
+    all:unset;
+    font-size: 24px;
+    border: 1px solid black;
+    width: 350px;
+    height:100px;
+    border-radius: 20px;
+    color: black;
+    padding-left: 20px;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    height: 250px;
+    width:400px;
+
+}
+.modal>.exit,.modal1>.exit{
+    position: fixed;
+    top:10px;
+    right:20px;
+
+    color:black;
+    font-size: 60px;
+    /* width: 50px; */
+    text-align: center;
+    transform: scale(1);
+    transition: all 200ms ease-in-out;
+}
+.modal>.exit:hover,.modal1>.exit:hover{
+    color:white;
+    cursor: default;
+    transform: scale(1.25);
+}
+.modal>button,.modal1>button{
+    all:unset;
+    color: black;
+    background-color: green;
+    border-radius: 20px;
+    height: 50px;
+    width:150px;
+    border: 1px solid black;
+    text-align: center;
+    transform: scale(1);
+    transition: all 200ms ease-in-out;
+    margin-left: 10px;
+}
+.modal>button:hover,.modal1>button:hover{
+    background-color: lighten(green,30%);
+    color:white;
+    border-color: white;
+    transform: scale(1.1);
+}
+
+.modal1{
+    width: 400px;
+    height: 400px;
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.modal1>button{
+    position: fixed;
+    bottom:20px;
+    left:10px;
+}
+.modal1>input:nth-child(1){
+    all:unset;
+    font-size: 20px;
+    border: 1px solid black;
+    width:350px;
+    height:50px;
+    color: black;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+textarea{
+    font-size: 16px;
+    padding:5px 0 0 10px;
+    width:350px;
+    height: 75px;
+    background-color: hwb(97 31% 5% / 0.98);
+    border-radius: 15px;
+    border:1px solid black;
+    color: black;
+    resize: none;
+}
+.date{
+    all:unset;
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 38px;
+    margin-left: 2px;
+}
+
+select{
+    width:120px;
+    height: 60px;
+    color: black;
+    background-color: hwb(97 31% 5% / 0.98);
+    border-radius: 10px;
+    font-size: 20px;
+}
+option{
+    color:black;
+    border-radius: 10px;
+}
+.color1{
+    background-color: limegreen;
+}
+.color2{
+    background-color: yellow;
+}
+.color3{
+    background-color: red;
+}

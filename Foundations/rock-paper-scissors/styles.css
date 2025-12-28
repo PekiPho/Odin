@@ -1,0 +1,40 @@
+body{
+    background-color: #70566D;
+    
+}
+
+button{
+    padding:20px;
+    background-color: #42273B;
+    color:#e2fcef;
+    font-weight: bold;
+}
+.container{
+    display:flex;
+    justify-content: space-around;
+    margin:10vh 0;
+}
+.one,
+.two{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color:#e2fcef;
+    margin: 10vh 0;
+    width:100px;
+    aspect-ratio: 1;
+    background-color: #42273B;
+}
+.box{
+    width:60vw;
+    height:100px;
+    background-color: #42273B;
+    margin: 0 auto;
+    font-size:28px;
+    color:#e2fcef;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,128 @@
+*{
+    font-family: 'Roboto',sans-serif;
+}
+
+.footer{
+    bottom:0;
+    position:fixed;
+    background-color: #1f2927 ;
+    color:#eee;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:8%;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    
+}
+.container > div:nth-child(1)
+{
+    color:#eee;
+    background-color: #1f2927;
+}
+.container > div:nth-child(3)
+{
+    background-color: #e5e7eb;
+    padding: 1em 8em;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul.links{
+    display:flex;
+    list-style-type: none;
+    gap:10px;
+}
+.four{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 8em;
+    margin-top: 2em;
+    margin-bottom: 10em;
+    padding:20px;
+    background-color: #3882f6;
+    border-radius: 20px;
+    color:#eee;
+    align-items: center;
+}
+p.action{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+img{
+    width: 200px;
+}
+button{
+    border-radius: 8px;
+    background-color: #3882f6;
+    color:#eee;
+    padding:5px 10px;
+    font-size: 16px;
+}
+button.dos{
+    border-color: #eee;
+}
+div.awesome{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    gap:20px;
+    margin-bottom: 30px;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+
+}
+p.big{
+    font-size: 48px;
+    font-weight: 1000;
+    color:#f9faf8;
+    margin-bottom: 0;
+}
+p.small{
+    font-size: 18px;
+    color:#e5e7eb;
+}
+.two{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 8em;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card > .box{
+    border: 4px solid #3882f6;
+    width:100px;
+    height: 100px;
+    border-radius: 16px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 16px;
+}
+p.text31{
+    color:#1f2937;
+    font-style:italic;
+    font-weight: 19;
+    font-size: 36px;
+}
+p.text32{
+    text-align: right;
+    font-size: 30px;
+    font-weight: 900;
+}

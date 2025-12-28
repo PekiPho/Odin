@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+}
+.intake{
+    background-color: rgba(151, 152, 168, 0.91);
+    width:100vw;
+    height:20vh;
+}
+.data{
+    background-color: rgba(25, 20, 179, 0.65);
+    width:100vw;
+    height:80vh;
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+input{
+    width:45vw;
+    height:25px;
+    margin:10px;
+}
+
+.btn{
+    width:100px;
+    height: 30px;
+    transform: translate(43vw,0);
+    margin-top: 15px;
+}
+.button2,.button3{
+    height:25px;
+    width:60px;
+}
+.line{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+p{
+    width:50vw;
+    height:40px;
+    border-color: rgba(23, 25, 59, 0.91);
+    border-style: solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+    
+/*
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+*/
